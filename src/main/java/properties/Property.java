@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 
 /**
+ * Basic class for property value. Value is comparable by row number.
  * @author tomas.langer
  */
 @Data
@@ -11,7 +12,7 @@ import lombok.Data;
 public class Property {
 
     private String value;
-    private int row;
+    private Integer row;
 
     public final boolean isPropValue() {
         return this instanceof PropValue;
